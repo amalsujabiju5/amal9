@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+
+
+<body>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="about" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"id="contact" href="contact.html">Contact</a>
+        </li>
+    </ul>
+
+
+
+</body>
+
+
+<body>
+<html>
+
+<head>
+    <style>
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+
+
+    </p>
+
+
+    <div class="heading" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" style="background-color: cornsilk;">Below three are the Servieces that we provide to the Customers and You can view my
+    <a href="./images/AMAL SUJA BIJU coverletter and resume.docx">Resume</a> by clicking on the link. </p>
+          </div> <p>
+
+            
+          </p>
+    <div class="gallery">
+        
+            <img src="./images/development.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc" style="color:rgb(0, 0, 0)">We Develops,design and update websites and online applications using various programming languages and design tools.</div>
+    </div>
+
+    <div class="gallery">
+       
+            <img src="./images/mobile.png" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc" style="color:rgb(184, 34, 94)">consulting with clients, writing code, designing applications, testing software, solving technical problems, and
+        adapting applications to new requirements.</div>
+    </div>
+
+    <div class="gallery">
+        
+            <img src="./images/game.png" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">We Brainstorm game concepts and design elements by coordinating with the design team. Develop frameworks and translated
+        design ideas into clean and efficient code by deploying game engine. Design and test game features.</div>
+    </div>
+
+    <script>
+        var newLink = document.createElement("LI");
+        var newAnchor = document.createElement("A");
+        newAnchor.setAttribute("class", "nav-link");
+        newAnchor.setAttribute("href", "human_resources.html");
+        newAnchor.innerHTML = "Human Resources";
+        newLink.appendChild(newAnchor);
+
+        var aboutLink = document.getElementById("about").parentNode;
+        aboutLink.parentNode.insertBefore(newLink, aboutLink.nextSibling);
+    </script>
+
+<!-- For changing the Nav bar link products to intrest using javaScript -->
+<script>
+    document.querySelector(".nav-item a[href='product.html']").textContent = "Interests";
+</script>
+
+
+
+
+<!-- This will create a copy right sign in the page -->
+<script>
+    var newNavbar = document.createElement("NAV");
+    newNavbar.setAttribute("class", "navbar fixed-bottom navbar-light bg-light");
+
+    var newContainer = document.createElement("DIV");
+    newContainer.setAttribute("class", "container");
+
+    var newCopyright = document.createElement("P");
+    newCopyright.setAttribute("class", "text-center");
+    var date = new Date();
+    newCopyright.innerHTML = "Copyright &copy; " + date.getFullYear();
+
+    newContainer.appendChild(newCopyright);
+    newNavbar.appendChild(newContainer);
+
+    document.body.appendChild(newNavbar);
+</script>
+
+</body>
+
+</html>
+
+
+
+    

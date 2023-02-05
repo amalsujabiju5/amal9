@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us</title>
+		<link
+			rel="stylesheet"
+			href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<ul class="nav">
+			<li class="nav-item">
+				<a class="nav-link active" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="product.html">Products</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="services.html">Services</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link"id="about" href="about.html">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link"id="contact" href="#">Contact</a>
+			</li>
+		</ul>
+
+		<!-- Form for the name field -->
+		<form>
+			
+			<div class="form-group">
+				<label for="InputName">Name</label>
+				<input 
+					type="text"
+				 	class="form-control"
+				  	id="InputName"
+					aria-describedby="NameHelp"
+					placeholder="Enter Name"
+					/>
+					<p></p>
+
+					</div>
+				
+	<!-- Form for the phone field -->
+		<form>
+			<div class="form-group">
+				<label for="InputPhone">Phone</label>
+				<input 
+				type="tel" 
+				class="form-control" 
+				id="InputPhone" 
+				aria-describedby="PhoneHelp" 
+				placeholder="905-922-5875" 
+				/>
+				<p></p>
+
+				</div>
+				
+
+	<!-- Form for the email field -->
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input
+					type="email"
+					class="form-control"
+					id="exampleInputEmail1"
+					aria-describedby="emailHelp"
+					placeholder="Enter email"
+				/>
+				<p></p>
+			</div>
+
+<!-- Form for the password field -->
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input
+					type="password"
+					class="form-control"
+					id="exampleInputPassword1"
+					placeholder="Password"
+				/>
+				<p></p>
+			</div>
+
+
+			<!-- Form for the password field -->
+			<div class="form-group">
+				<label for="InputText">Message</label>
+				<textarea
+				 type="text" 
+				 class="form-control"
+				 rows="5"
+				 id="InputText" 
+				 placeholder="Message" ></textarea>
+				
+				 
+				<p></p>
+			</div>
+
+
+
+
+
+<!-- Form for the check box field -->
+			<div class="form-check">
+				<input
+					type="checkbox"
+					class="form-check-input"
+					id="exampleCheck1"
+				/>
+				<label class="form-check-label" for="exampleCheck1"
+					>Check me out</label
+				>
+			</div>
+			<button id="submit-button" type="submit" class="btn btn-primary">
+				Submit
+			</button>
+		</form>
+		<script src="./scripts/app.js"></script>
+
+		<script>
+			var newLink = document.createElement("LI");
+			var newAnchor = document.createElement("A");
+			newAnchor.setAttribute("class", "nav-link");
+			newAnchor.setAttribute("href", "human_resources.html");
+			newAnchor.innerHTML = "Human Resources";
+			newLink.appendChild(newAnchor);
+
+			var aboutLink = document.getElementById("about").parentNode;
+			aboutLink.parentNode.insertBefore(newLink, aboutLink.nextSibling);
+		</script>
+		
+		<!-- For changing the Nav bar link products to intrest using javaScript -->
+		
+		<script>
+			document.querySelector(".nav-item a[href='product.html']").textContent = "Interests";
+		</script>
+
+
+<!-- This will create a copy right sign in the page -->
+<script>
+	var newNavbar = document.createElement("NAV");
+	newNavbar.setAttribute("class", "navbar fixed-bottom navbar-light bg-light");
+
+	var newContainer = document.createElement("DIV");
+	newContainer.setAttribute("class", "container");
+
+	var newCopyright = document.createElement("P");
+	newCopyright.setAttribute("class", "text-center");
+	var date = new Date();
+	newCopyright.innerHTML = "Copyright &copy; " + date.getFullYear();
+
+	newContainer.appendChild(newCopyright);
+	newNavbar.appendChild(newContainer);
+
+	document.body.appendChild(newNavbar);
+</script>
+
+
+	</body>
+</html>
