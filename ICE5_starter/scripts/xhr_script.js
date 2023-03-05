@@ -13,7 +13,7 @@ let xhr = new XMLHttpRequest();
 
 // create a callback function to fire when the onreadystatechange happens
 xhr.onreadystatechange = () => {
-    console.log(`The state: ${xhr.readyState}`);
+    console.log('The state: ${xhr.readyState}');
     // check that the state is done
     // if (xhr.readyState ===XMLHttpRequest.DONE)
     if (xhr.readyState === 4) {
@@ -27,7 +27,7 @@ xhr.onreadystatechange = () => {
 
 
         // console log to see what we have
-        console.log(`The Response: ${jsonResponse[0][url_photos]}`);
+        console.log('The Response: ${jsonResponse[0][url]}');
         let photo_url_1 = jsonResponse[0]['url'];
         let photo_url_2 = jsonResponse[2]['url'];
         
