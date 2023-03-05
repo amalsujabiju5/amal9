@@ -1,3 +1,10 @@
+//Name: AMAL SUJA BIJU
+//student id:100838823
+//Date:04/03/2023
+
+
+
+
 /*
 * Class named User for firstName, lastName, userName, email and password properties
  */
@@ -38,3 +45,5 @@ export class user{
 
 
 }
+
+//Refrence-ICE4 from the Webd6201

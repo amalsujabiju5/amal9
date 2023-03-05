@@ -1,3 +1,8 @@
+//Name: AMAL SUJA BIJU
+//student id:100838823
+//Date:04/03/2023
+
+
 import * as userClass from "./user.js"
 let submit = document.getElementById("btnRegSubmit");
 
@@ -38,6 +43,22 @@ function validateLast(last) {
     }
 };
 
+
+
+/**
+ * validateUserName- validated username entry through registration form
+ * @param {string} user
+ * @returns html element for error message
+ */
+function validateUser(user) {
+    if (user.length < 2) {
+        return "<p> You have entered a User Name  that is too short! </P>"
+    }
+    else {
+        return"<p></P>"
+    }
+};
+
 /**
  * validateEmail- validated user email entry through registration form
  * @param {string} email
@@ -46,11 +67,12 @@ function validateLast(last) {
 
 let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 function validateEmail(email) {
-    if (email.length < 2 || !emailRegex.test(email)) {
+    if (email.length < 8 || !emailRegex.test(email)) {
         return "<p> Please Enter your email correctly! </P>"
     }
-    else {
-        return"<p></p>"
+    else if (email !== "") {
+        
+        return "<p> Please Enter your email correctly! </P>"
     }
 };
 
@@ -62,17 +84,17 @@ function validateEmail(email) {
  * @returns html element for error message
  */
 function validatePassword(pass1, pass2) {
-    if (pass1 === pass2) {
-        return "<p></P>"   
+    if (pass1 != pass2) {
+        return "<p>Your passwords do not match.</P>"   
     }
     
 
-    // if (pass1 & pass2 >= 6) {
-    //     return"<p> password should be atleast 6 characyters! </p>"
-    // }
+    else if (pass1.length< 6) {
+        return"<p> password should be atleast 6 characyters! </p>"
+    }
 
-    else {
-        return "<p>Your passwords do not match.</p>"
+    else  {
+        return "<p></p>"
     }
 
 };
@@ -120,15 +142,18 @@ if ($("#btnRegSubmit")) {
        $(".errorMessage").html(validateFirst(unvalidated_user.firstName));
         
        // validate last name
-        $(".errorMessage2").html(validateLast(unvalidated_user.lastName ));
+        $(".errorMessage2").html(validateLast(unvalidated_user.lastName));
+        
+        // validate User name
+        $(".errorMessage3").html(validateUser(unvalidated_user.username ));
 
 
          // validate  email
-        $(".errorMessage3").html(validateEmail(unvalidated_user.email));
+        $(".errorMessage4").html(validateEmail(unvalidated_user.email));
         
         // validate confirm password
-        let error = validatePassword(unvalidated_user.password, $("#inputPassword2").val());
-        $(".errorMessage4").html(error);
+        let error = validatePassword(unvalidated_user.password1, $("#inputPassword2").val());
+        
         $(".errorMessage5").html(error);
 
     });
@@ -144,3 +169,6 @@ if ($("#btnRegSubmit")) {
 
         });
 };
+
+
+//Refrence-ICE4 from the Webd6201

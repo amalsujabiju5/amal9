@@ -1,3 +1,6 @@
+//Name: AMAL SUJA BIJU
+//student id:100838823
+//Date:04/03/2023
 
 console.log('app.js loaded')
 var submitButton = document.getElementById("submit-button");
