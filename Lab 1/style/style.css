@@ -36,8 +36,14 @@ body{
 
     /* Maximum width */
    
-    background-color: rgba(255, 255, 255, .4);
+    background-color: rgb(217, 213, 213);
     /* Center it */
+}
+
+/*to change the background color of the container*/
+.container {
+    background-color: #c0bfbf;
+    /* change the color to your desired color */
 }
 
 .container .content {

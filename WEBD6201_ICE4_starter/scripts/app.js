@@ -101,7 +101,14 @@ if($("#speckled-excerpt")){
 // FORM JQUERY
 // TO DO: import form validation functions with alias
 import * as formValidation from "./form.js"
-
+function validateFirst(first) {
+    if (first.length < 2) {
+        return "<p>You have entered a first name that is too short.</p>"
+    }
+    else {
+        return "<p></p>";
+    }
+};
 
 // if the submit button is on the page
 if ($("#btnRegSubmit")) {
@@ -216,3 +223,4 @@ if ($(".gallery")){
 
     });
 };
+

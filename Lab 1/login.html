@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+         crossorigin="anonymous">
+        </script>
+
+    <link rel="stylesheet" href="./style/style.css" />
+
+
+
+    <!-- nav bars  -->
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="product.html">Products</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="about" href="about.html">About</a>
+        </li>
+        <li class="nav-item" id="contact-id">
+            <a class="nav-link" id="contact" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="Register" href="register.html">Register</a>
+        </li>
+        
+    </ul>
+
+
+    <section class="min-vh-100">
+        <div class="container py-5 h-100">
+            <div class="row d-flex align-items-center justify-content-center min-vh-100 ">
+                <div class="col-md-8 col-lg-7 col-xl-6">
+                    
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+                        class="img-fluid" alt="Phone image">
+                        
+                </div>
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                    <form >
+                        <form style="background-color: rgb(160, 105, 105)">
+                            <!-- form elements here -->
+                        </form>
+
+                        <!-- userName input-->
+                        <div class="form-outline mb-4">
+                           
+                            <input
+                            type="email" 
+                            class="form-control"
+                            id="inputEmail"
+                            placeholder="Enter Your UserName"
+                            required />
+                           
+                            <div class="errorMessage"></div>
+                        </div>
+    
+                        <!-- Password input -->
+                        <div class="form-outline mb-4" id="pass1-group">
+                            
+                            <input type="password"
+                            class="form-control"
+                            id="inputPassword"
+                            placeholder="Password" required
+                            />
+                            
+                            
+                        </div>
+    
+                        <div class="d-flex justify-content-around align-items-center mb-4">
+                            <!-- Checkbox -->
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                                <label class="form-check-label" for="form1Example3"> Remember me </label>
+                            </div>
+                            <a href="#!">Forgot password?</a>
+                        </div>
+  
+                        <!-- Submit button -->
+                        <!-- <input type="text" 
+                        id="input-field"> -->
+                        <button type="submit"
+                        class="btn btn-primary btn-lg btn-block"
+                        id="submit-button">Submit
+                    </button>
+                    
+                        <div class="divider d-flex align-items-center my-4">
+                            <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                        </div>
+    
+                        <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!"
+                            role="button">
+                            <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
+                        </a>
+                        <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!"
+                            role="button">
+                            <i class="fab fa-twitter me-2"></i>Continue with Twitter</a>
+
+                           
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script  src="./scripts/app.js"></script>
+    <script type="module" src="./scripts/login.js"></script>
+    <script type="module" src="./scripts/register.js"></script>
